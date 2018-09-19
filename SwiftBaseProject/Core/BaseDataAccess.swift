@@ -34,7 +34,7 @@ public protocol DataAccess {
  */
 open class BaseDataAccess: DataAccess {
   open var disposeBag = DisposeBag()
-  open let realmConfiguration = Realm.Configuration()
+  public let realmConfiguration = Realm.Configuration()
 
   open var realm: Realm? {
     guard let realm = try? Realm(configuration: realmConfiguration) else { return nil }

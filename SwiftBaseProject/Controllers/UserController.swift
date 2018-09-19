@@ -21,11 +21,6 @@ class UserController {
   }
 
   func login(with username: String, password: String) -> Observable<User> {
-    let serviceCall = serviceManager.provider.rx
-      .request(UserService.login(username: username, password: password))
-      .filterSuccessfulStatusCodes()
-      .map(User.self)
-      .asObservable()
     let cache = Observable.just(User(username: "pedro", email: "a@a.com", phone: "asdasdasd"))
     return cache
     // We should call serviceCall here, this cache is only to make it work as a mock
