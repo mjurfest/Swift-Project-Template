@@ -83,6 +83,6 @@ open class NibInstantiableView: UIView {
     contentView.frame = bounds
     contentView.clipsToBounds = false
     contentView.translatesAutoresizingMaskIntoConstraints = true
-    contentView.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
+    contentView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight, UIView.AutoresizingMask.flexibleWidth]
   }
 }
