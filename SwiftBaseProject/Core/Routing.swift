@@ -120,6 +120,10 @@ public extension Router {
       rootViewController?.popViewController(animated: animated)
     }
   }
+  
+  public func popToRoot(animated: Bool = true) {
+    rootViewController?.popToRootViewController(animated: animated)
+  }
 
   public func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {
     let presentingViewController = currentViewController?.presentingViewController
