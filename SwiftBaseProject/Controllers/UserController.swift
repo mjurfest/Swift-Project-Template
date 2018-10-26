@@ -21,8 +21,10 @@ class UserController {
   }
 
   func login(with username: String, password: String) -> Observable<User> {
-    let cache = Observable.just(User(username: "pedro", email: "a@a.com", phone: "asdasdasd"))
-    return cache
+    guard let user = currentUser else {
+      return Observable.error(RxError.noElements)
+    }
+    return Observable.just(user)
     // We should call serviceCall here, this cache is only to make it work as a mock
 //    return serviceCall
 //      .do(onNext: { [weak self] user in

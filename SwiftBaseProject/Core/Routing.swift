@@ -69,7 +69,7 @@ public protocol Router: class {
        - route: The destination route of your navigation action, pass nil if you want to pop just to the previous controller.
        - animated: Animate the transition or not.
   */
-  func pop(to route: Route?, animated: Bool)
+  func popTo(index: Int, animated: Bool)
 
   /**
    Dismiss your current ViewController.
@@ -110,19 +110,19 @@ public extension Router {
       }
     }
   }
-
-  public func pop(to route: Route? = nil, animated: Bool = true) {
-    if let route = route {
-      let viewController = route.screen
-      rootViewController?.popToViewController(viewController, animated: animated)
-      currentViewController = viewController
-    } else {
-      rootViewController?.popViewController(animated: animated)
-    }
-  }
   
   public func popToRoot(animated: Bool = true) {
     rootViewController?.popToRootViewController(animated: animated)
+  }
+  
+  public func popTo(index: Int, animated: Bool = true) {
+    guard
+      let viewControllers = rootViewController?.viewControllers,
+      viewControllers.count > index
+    else { return }
+    let viewController = viewControllers[index]
+    rootViewController?.popToViewController(viewController, animated: animated)
+    currentViewController = viewController
   }
 
   public func dismiss(animated: Bool = true, completion: (() -> Void)? = nil) {

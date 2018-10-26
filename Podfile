@@ -4,18 +4,18 @@ target 'SwiftBaseProject' do
   use_frameworks!
 
   # Core Dependencies
-  pod 'SwiftLint', '~> 0.26.0'
-  pod 'R.swift', '~> 4.0.0'
-  pod 'RxSwift', '~> 4.2.0'
-  pod 'RxCocoa',    '~> 4.2.0'
+  pod 'SwiftLint', '~> 0.27.0'
+  pod 'R.swift', '~> 5.0.0.alpha.2'
+  pod 'RxSwift', '~> 4.3.1'
+  pod 'RxCocoa',    '~> 4.3.1'
   pod 'Alamofire', '~> 4.7.3'
   pod 'Moya/RxSwift', '~> 11.0.2'
   # In app notification and other banners
-  pod 'Whisper', '~> 6.0.2'
+  pod 'SwiftEntryKit', '~> 0.8.2 '
 
   # Database management
-  pod 'RxRealm', '~> 0.7.5'
-  pod 'RealmSwift', '~> 3.7.5'
+  pod 'RxRealm', :git => 'https://github.com/RxSwiftCommunity/RxRealm', :tag => '0.7.6'
+  pod 'RealmSwift', '~> 3.11.1'
 
   # Remote Image management
   # pod 'Kingfisher', '~> 4.6.3'
