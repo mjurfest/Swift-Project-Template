@@ -110,11 +110,11 @@ public extension Router {
       }
     }
   }
-  
+
   public func popToRoot(animated: Bool = true) {
     rootViewController?.popToRootViewController(animated: animated)
   }
-  
+
   public func popTo(index: Int, animated: Bool = true) {
     guard
       let viewControllers = rootViewController?.viewControllers,

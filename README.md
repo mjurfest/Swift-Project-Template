@@ -8,9 +8,10 @@ The goal of this project is to work as a template for iOS aplications, providing
 - `R.Swift` for xcode asset management.
 - `SwiftLint` for style checking.
 - `RxSwift` for data flow management.
-- `Alamofire` + `TBD` for networking.
+- `Alamofire` + `Moya` for networking.
 - `RealmSwift` + `RxRealm` for database management.
 - `Whisper` for in app notification-style messages.
+- `Swift-Snapshot-Test` and `Nimble` For testing.
 
 # Usage
 

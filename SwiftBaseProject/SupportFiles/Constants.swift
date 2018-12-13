@@ -11,8 +11,8 @@ import Foundation
 struct Constants {
   // Sample env management
   #if STAGING
-    static let apiBaseUrl = URL(string: "https://google.com")!
+  static let apiBaseUrl = URL(string: "https://google.com")! // swiftlint:disable:this all
   #else
-    static let apiBaseUrl = URL(string: "point_to_prod_here")!
+    static let apiBaseUrl = URL(string: "point_to_prod_here")! // swiftlint:disable:this all
   #endif
 }

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import SwiftBaseProject
 
 class SwiftBaseProjectUITests: XCTestCase {
 
@@ -18,9 +19,6 @@ class SwiftBaseProjectUITests: XCTestCase {
 
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func testExample() {
     }
 
 }
