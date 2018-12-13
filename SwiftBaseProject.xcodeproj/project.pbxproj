@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7FFE5121C2BF9900D910ED /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FFE5021C2BF9900D910ED /* Logger.swift */; };
+		1A7FFE5321C2C2C100D910ED /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FFE5221C2C2C100D910ED /* AnalyticsService.swift */; };
+		1A7FFE5621C2C64F00D910ED /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FFE5521C2C64F00D910ED /* AnalyticsManager.swift */; };
 		2BB2A53F2AC6C5FDDAE1E62C /* Pods_SwiftBaseProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B94875E31222427017C279 /* Pods_SwiftBaseProjectUITests.framework */; };
 		3F39E04567304153A0E9CF3C /* Pods_SwiftBaseProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AEC1BFCBECE7611C3C144A /* Pods_SwiftBaseProjectTests.framework */; };
 		4D343B9BD0A2D92B54B9476F /* Pods_SwiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E707058E741C48522D77D18 /* Pods_SwiftBaseProject.framework */; };
@@ -56,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A7FFE5021C2BF9900D910ED /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1A7FFE5221C2C2C100D910ED /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		1A7FFE5521C2C64F00D910ED /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		2E707058E741C48522D77D18 /* Pods_SwiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3B7D30CFACE34BE301BBF2 /* Pods-SwiftBaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProjectTests/Pods-SwiftBaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C952A8E6EEEC6909A587B3B /* Pods-SwiftBaseProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProjectUITests/Pods-SwiftBaseProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7FFE5421C2C31D00D910ED /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FFE5221C2C2C100D910ED /* AnalyticsService.swift */,
+				1A7FFE5521C2C64F00D910ED /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		619EFAD79D507748E5550E80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,10 +323,12 @@
 		97EBDED0205ADA3B0085A836 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1A7FFE5421C2C31D00D910ED /* Analytics */,
 				97139D07207654D1007B1C65 /* View */,
 				97E53977207510B100D95BDA /* Routing.swift */,
 				97B83C5F2056EA8D0096B10A /* BaseManager.swift */,
 				97EBDED3205ADE360085A836 /* BaseDataAccess.swift */,
+				1A7FFE5021C2BF9900D910ED /* Logger.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -640,12 +657,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C6142F2056D7A3001FEE20 /* LoginViewController.swift in Sources */,
+				1A7FFE5621C2C64F00D910ED /* AnalyticsManager.swift in Sources */,
 				97C6142D2056D7A3001FEE20 /* AppDelegate.swift in Sources */,
 				97E7D318205AA993009BA321 /* UserController.swift in Sources */,
 				97B83C5C2056E73C0096B10A /* TargetType+BaseProject.swift in Sources */,
+				1A7FFE5121C2BF9900D910ED /* Logger.swift in Sources */,
 				97E53978207510B100D95BDA /* Routing.swift in Sources */,
 				97B83C632056EC3B0096B10A /* AppRouter.swift in Sources */,
 				97139D09207654FB007B1C65 /* NibInstantiable.swift in Sources */,
+				1A7FFE5321C2C2C100D910ED /* AnalyticsService.swift in Sources */,
 				97EBDECF205AD5C10085A836 /* DashboardViewModel.swift in Sources */,
 				97EBDED4205ADE360085A836 /* BaseDataAccess.swift in Sources */,
 				97E5397C20751D2800D95BDA /* DashBoardRoute.swift in Sources */,
