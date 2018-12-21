@@ -11,7 +11,7 @@ import UIKit
 
 /**
  NSLayoutConstraints extension to provide helper methods to handle NSLayoutConstraints programatically.
- All functions return self to provide function chaining so you can do function chainings
+ All functions return self to provide function chaining.
 */
 public extension NSLayoutConstraint {
   // Activates the constraint

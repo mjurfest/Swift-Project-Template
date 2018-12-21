@@ -10,7 +10,7 @@ import Foundation
 import os
 
 /**
- Public protocol that defines de behaviour of a logger service.
+ Public protocol that defines the behaviour of a logger service.
 */
 public protocol Logger {
   // The main instance of the Logger.
