@@ -4,32 +4,32 @@ target 'SwiftBaseProject' do
   use_frameworks!
 
   # Core Dependencies
-  pod 'SwiftLint', '~> 0.29.1'
-  pod 'R.swift', '~> 5.0.0.rc.1'
-  pod 'RxSwift', '~> 4.4.0'
-  pod 'RxCocoa',    '~> 4.4.0'
-  pod 'Alamofire', '~> 4.8.0'
+  pod 'SwiftLint', '~> 0.31.0'
+  pod 'R.swift', '~> 5.0.2'
+  pod 'RxSwift', '~> 4.4.1'
+  pod 'RxCocoa',    '~> 4.4.1'
+  pod 'Alamofire', '~> 4.8.1'
   pod 'Moya/RxSwift', '~> 12.0.1'
   # In app notification and other banners
-  pod 'SwiftEntryKit', '~> 0.8.6'
+  # pod 'SwiftEntryKit', '~> 0.8.6'
 
   # Database management
   pod 'RxRealm', :git => 'https://github.com/RxSwiftCommunity/RxRealm', :tag => '0.7.7'
-  pod 'RealmSwift', '~> 3.12.0'
+  pod 'RealmSwift', '~> 3.13.1'
 
   # Remote Image management
   # pod 'Kingfisher', '~> 4.6.3'
 
   target 'SwiftBaseProjectTests' do
     inherit! :search_paths
-    pod 'Nimble', '~> 7.3.1'
-    pod 'SnapshotTesting', '~> 1.0'
+    pod 'Nimble', '~> 8.0.0'
+    pod 'SnapshotTesting', '~> 1.2'
   end
 
   target 'SwiftBaseProjectUITests' do
     inherit! :search_paths
-    pod 'Nimble', '~> 7.3.1'
-    pod 'SnapshotTesting', '~> 1.0'
+    pod 'Nimble', '~> 8.0.0'
+    pod 'SnapshotTesting', '~> 1.2'
   end
 
 
