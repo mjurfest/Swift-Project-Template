@@ -22,10 +22,11 @@ public class BaseRouter: Router {
   public var currentViewController: UIViewController?
 
   public required init(with route: Route) {
-    if let navigation = route.screen as? UINavigationController {
+    let screen = route.screen
+    if let navigation = screen as? UINavigationController {
       rootViewController = navigation
     } else {
-      let viewController = route.screen
+      let viewController = screen
       rootViewController = UINavigationController(rootViewController: viewController)
       rootViewController?.isNavigationBarHidden = true
       currentViewController = viewController
