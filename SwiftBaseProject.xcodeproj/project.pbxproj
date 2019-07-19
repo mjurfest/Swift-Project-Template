@@ -41,6 +41,7 @@
 		97E7D31E205AAE2E009BA321 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E7D31D205AAE2E009BA321 /* UserDataAccess.swift */; };
 		97EBDECF205AD5C10085A836 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBDECE205AD5C10085A836 /* DashboardViewModel.swift */; };
 		97EBDED4205ADE360085A836 /* BaseDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBDED3205ADE360085A836 /* BaseDataAccess.swift */; };
+		A0E2F69022E240B200B82BA6 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2F68F22E240B200B82BA6 /* NSMutableAttributedString.swift */; };
 		C425B3F62267BABD000A4BFF /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425B3F52267BABD000A4BFF /* Identifiable.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		97EBDECE205AD5C10085A836 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		97EBDED3205ADE360085A836 /* BaseDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataAccess.swift; sourceTree = "<group>"; };
 		9C0F561147B7782F09513410 /* Pods-SwiftBaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProjectUITests/Pods-SwiftBaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0E2F68F22E240B200B82BA6 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		A2AEC1BFCBECE7611C3C144A /* Pods_SwiftBaseProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B94875E31222427017C279 /* Pods_SwiftBaseProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C425B3F52267BABD000A4BFF /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		97D823312056DE6000800FB1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A0E2F68F22E240B200B82BA6 /* NSMutableAttributedString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -424,7 +427,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Mauricio Cousillas";
+				ORGANIZATIONNAME = "Moove-it";
 				TargetAttributes = {
 					97C614282056D7A3001FEE20 = {
 						CreatedOnToolsVersion = 9.2;
@@ -687,6 +690,7 @@
 				97139D0B20765A0D007B1C65 /* UIView+ConstraintsHelpers.swift in Sources */,
 				97B83C652056F9F60096B10A /* LoginViewModel.swift in Sources */,
 				97E5397A20751D1000D95BDA /* LoginRoute.swift in Sources */,
+				A0E2F69022E240B200B82BA6 /* NSMutableAttributedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
