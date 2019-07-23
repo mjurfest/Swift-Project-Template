@@ -4,8 +4,8 @@ target 'SwiftBaseProject' do
   use_frameworks!
 
   # Core Dependencies
-  pod 'SwiftLint', '~> 0.31.0'
-  pod 'R.swift', '~> 5.0.2'
+  pod 'SwiftLint', '~> 0.34.0'
+  pod 'R.swift', '~> 5.0.3'
   pod 'RxSwift', '~> 4.4.1'
   pod 'RxCocoa',    '~> 4.4.1'
   pod 'Alamofire', '~> 4.8.1'
@@ -31,7 +31,6 @@ target 'SwiftBaseProject' do
     pod 'Nimble', '~> 8.0.0'
     pod 'SnapshotTesting', '~> 1.2'
   end
-
 
 end
 

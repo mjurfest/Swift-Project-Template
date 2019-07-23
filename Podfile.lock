@@ -7,9 +7,9 @@ PODS:
     - Moya/Core
     - RxSwift (~> 4.0)
   - Nimble (8.0.0)
-  - R.swift (5.0.2):
+  - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
-  - R.swift.Library (5.0.0)
+  - R.swift.Library (5.0.1)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
@@ -25,19 +25,19 @@ PODS:
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
   - SnapshotTesting (1.2.0)
-  - SwiftLint (0.31.0)
+  - SwiftLint (0.34.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.1)
   - Moya/RxSwift (~> 12.0.1)
   - Nimble (~> 8.0.0)
-  - R.swift (~> 5.0.2)
+  - R.swift (~> 5.0.3)
   - RealmSwift (~> 3.13.1)
   - RxCocoa (~> 4.4.1)
   - RxRealm (from `https://github.com/RxSwiftCommunity/RxRealm`, tag `0.7.7`)
   - RxSwift (~> 4.4.1)
   - SnapshotTesting (~> 1.2)
-  - SwiftLint (~> 0.31.0)
+  - SwiftLint (~> 0.34.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -69,8 +69,8 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Nimble: a0e6f95b4b91a4f66b6da3512b6bebc07c9cbf49
-  R.swift: 81455d81467763cbd3f4d79d938d05f4ac4c0228
-  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
@@ -79,8 +79,8 @@ SPEC CHECKSUMS:
   RxRealm: 5379eddd74f8d617ca7681d1f8d144af25b432b0
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SnapshotTesting: bd92e40aaef4a735f7950d42cb0b8ea7c3716b00
-  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: df018573b48992c416dcbe686b91eb43103ca03d
+PODFILE CHECKSUM: 077a05d58d5075124b76d160560f87b9e6f9bbd8
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5
